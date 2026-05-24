@@ -76,15 +76,34 @@
   </div>
   
   <!-- Flutter Boot -->
+  <script src="flutter.js" defer></script>
   <script>
     window.addEventListener('load', function(ev) {
+      // Hide loading on success
+      function hideLoader() {
+        document.querySelector('.loading').style.display = 'none';
+      }
+      
+      // Show error if Flutter fails to load
+      function showError(msg) {
+        document.querySelector('.spinner').style.display = 'none';
+        document.querySelector('.text').textContent = 'Error: ' + msg;
+        document.querySelector('.text').style.color = '#dc2626';
+      }
+      
       _flutter.loader.loadEntrypoint({
-        serviceWorker: { serviceWorkerVersion: navigator.serviceWorker?.registration?.active?.script || '' },
+        serviceWorker: { serviceWorkerVersion: "1" },
         onEntrypointLoaded: function(engineInitializer) {
           engineInitializer.initializeEngine().then(function(appRunner) {
-            appRunner.runApp();
+            appRunner.runApp().then(hideLoader).catch(function(err) {
+              showError(err.message || 'Failed to run app');
+            });
+          }).catch(function(err) {
+            showError(err.message || 'Failed to initialize engine');
           });
         }
+      }).catch(function(err) {
+        showError(err.message || 'Failed to load Flutter');
       });
     });
   </script>
