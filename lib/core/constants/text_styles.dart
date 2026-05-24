@@ -6,42 +6,42 @@ class AppTextStyles {
   static const TextStyle heading1 = TextStyle(
     fontSize: 48,
     fontWeight: FontWeight.bold,
-    color: Color(0xFFE2E8F0),
+    color: Color(0xFF1F2937),
     height: 1.2,
   );
   
   static const TextStyle heading2 = TextStyle(
     fontSize: 36,
     fontWeight: FontWeight.bold,
-    color: Color(0xFFE2E8F0),
+    color: Color(0xFF1F2937),
     height: 1.3,
   );
   
   static const TextStyle heading3 = TextStyle(
     fontSize: 24,
     fontWeight: FontWeight.w600,
-    color: Color(0xFFE2E8F0),
+    color: Color(0xFF1F2937),
     height: 1.4,
   );
   
   static const TextStyle subtitle = TextStyle(
     fontSize: 18,
     fontWeight: FontWeight.normal,
-    color: Color(0xFFE2E8F0),
+    color: Color(0xFF1F2937),
     height: 1.5,
   );
   
   static const TextStyle body = TextStyle(
     fontSize: 16,
     fontWeight: FontWeight.normal,
-    color: Color(0xFFE2E8F0),
+    color: Color(0xFF1F2937),
     height: 1.6,
   );
   
   static const TextStyle caption = TextStyle(
     fontSize: 14,
     fontWeight: FontWeight.normal,
-    color: Color(0xFF94A3B8),
+    color: Color(0xFF6B7280),
     height: 1.5,
   );
 }

@@ -1,21 +1,21 @@
 import 'package:flutter/material.dart';
 
 class AppColors {
-  // Background
-  static const Color background = Color(0xFF0F172A);
+  // Background - Light theme
+  static const Color background = Color(0xFFFAFAFA);
   
-  // Primary Accent - Neon Sky Blue
-  static const Color primaryAccent = Color(0xFF38BDF8);
+  // Primary Accent - Royal Blue
+  static const Color primaryAccent = Color(0xFF2563EB);
   
-  // Secondary Accent - Vibrant Rose
-  static const Color secondaryAccent = Color(0xFFF43F5E);
+  // Secondary Accent - Burgundy Red
+  static const Color secondaryAccent = Color(0xFF8B5CF6);
   
-  // Text - Off-White
-  static const Color text = Color(0xFFE2E8F0);
+  // Text - Charcoal
+  static const Color text = Color(0xFF1F2937);
   
   // Additional shades
-  static const Color surfaceDark = Color(0xFF1E293B);
-  static const Color surfaceLight = Color(0xFF334155);
+  static const Color surfaceDark = Color(0xFFF3F4F6);
+  static const Color surfaceLight = Color(0xFFE5E7EB);
 }
 
 class AppTheme {

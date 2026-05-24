@@ -11,10 +11,10 @@ class NavigationBar extends StatelessWidget {
       height: 70,
       padding: const EdgeInsets.symmetric(horizontal: 24),
       decoration: const BoxDecoration(
-        color: Color(0xFF0F172A),
+        color: Color(0xFFFAFAFA),
         border: Border(
           bottom: BorderSide(
-            color: Color(0xFF334155),
+            color: Color(0xFFE5E7EB),
             width: 1,
           ),
         ),
@@ -30,7 +30,7 @@ class NavigationBar extends StatelessWidget {
                 Text(
                   'AMK',
                   style: TextStyle(
-                    color: Color(0xFF38BDF8),
+                    color: Color(0xFF2563EB),
                     fontSize: 24,
                     fontWeight: FontWeight.bold,
                   ),
@@ -38,7 +38,7 @@ class NavigationBar extends StatelessWidget {
                 Text(
                   '.dev',
                   style: TextStyle(
-                    color: Color(0xFFE2E8F0),
+                    color: Color(0xFF1F2937),
                     fontSize: 24,
                     fontWeight: FontWeight.w300,
                   ),
@@ -82,8 +82,8 @@ class _NavLink extends StatelessWidget {
         label,
         style: TextStyle(
           color: isActive 
-              ? const Color(0xFF38BDF8) 
-              : const Color(0xFFE2E8F0),
+              ? const Color(0xFF2563EB) 
+              : const Color(0xFF1F2937),
           fontSize: 16,
           fontWeight: isActive ? FontWeight.w600 : FontWeight.normal,
         ),

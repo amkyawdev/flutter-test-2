@@ -62,7 +62,7 @@ class _DashboardPageState extends State<DashboardPage> with TickerProviderStateM
   @override
   Widget build(BuildContext context) {
     return Container(
-      color: const Color(0xFF0F172A),
+      color: const Color(0xFFFAFAFA),
       child: SingleChildScrollView(
         padding: const EdgeInsets.all(24),
         child: Column(
@@ -71,7 +71,7 @@ class _DashboardPageState extends State<DashboardPage> with TickerProviderStateM
             Text(
               'Dashboard',
               style: AppTextStyles.heading2.copyWith(
-                color: const Color(0xFFE2E8F0),
+                color: const Color(0xFF1F2937),
               ),
             ),
             const SizedBox(height: 32),
@@ -106,7 +106,7 @@ class _DashboardPageState extends State<DashboardPage> with TickerProviderStateM
             Text(
               'Skills Progress',
               style: AppTextStyles.heading3.copyWith(
-                color: const Color(0xFFE2E8F0),
+                color: const Color(0xFF1F2937),
               ),
             ),
             const SizedBox(height: 16),
@@ -167,10 +167,10 @@ class _StatsCard extends StatelessWidget {
       width: 180,
       padding: const EdgeInsets.all(20),
       decoration: BoxDecoration(
-        color: const Color(0xFF1E293B),
+        color: const Color(0xFFF3F4F6),
         borderRadius: BorderRadius.circular(12),
         border: Border.all(
-          color: const Color(0xFF334155),
+          color: const Color(0xFFE5E7EB),
           width: 1,
         ),
       ),
@@ -179,14 +179,14 @@ class _StatsCard extends StatelessWidget {
         children: [
           Icon(
             icon,
-            color: const Color(0xFF38BDF8),
+            color: const Color(0xFF2563EB),
             size: 28,
           ),
           const SizedBox(height: 12),
           Text(
             value,
             style: AppTextStyles.heading2.copyWith(
-              color: const Color(0xFFE2E8F0),
+              color: const Color(0xFF1F2937),
             ),
           ),
           const SizedBox(height: 4),
@@ -244,14 +244,14 @@ class _ProgressBarState extends State<_ProgressBar>
           Text(
             widget.label,
             style: AppTextStyles.body.copyWith(
-              color: const Color(0xFFE2E8F0),
+              color: const Color(0xFF1F2937),
             ),
           ),
           const SizedBox(height: 8),
           Container(
             height: 8,
             decoration: BoxDecoration(
-              color: const Color(0xFF334155),
+              color: const Color(0xFFE5E7EB),
               borderRadius: BorderRadius.circular(4),
             ),
             child: AnimatedBuilder(
@@ -264,8 +264,8 @@ class _ProgressBarState extends State<_ProgressBar>
                     decoration: BoxDecoration(
                       gradient: const LinearGradient(
                         colors: [
-                          Color(0xFF38BDF8),
-                          Color(0xFFF43F5E),
+                          Color(0xFF2563EB),
+                          Color(0xFF8B5CF6),
                         ],
                       ),
                       borderRadius: BorderRadius.circular(4),

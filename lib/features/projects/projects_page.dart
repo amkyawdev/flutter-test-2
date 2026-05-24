@@ -35,7 +35,7 @@ class _ProjectsPageState extends State<ProjectsPage> {
   @override
   Widget build(BuildContext context) {
     return Container(
-      color: const Color(0xFF0F172A),
+      color: const Color(0xFFFAFAFA),
       child: SingleChildScrollView(
         padding: const EdgeInsets.all(24),
         child: Column(
@@ -44,7 +44,7 @@ class _ProjectsPageState extends State<ProjectsPage> {
             Text(
               'Projects',
               style: AppTextStyles.heading2.copyWith(
-                color: const Color(0xFFE2E8F0),
+                color: const Color(0xFF1F2937),
               ),
             ),
             const SizedBox(height: 32),
@@ -102,18 +102,18 @@ class _ProjectCardState extends State<_ProjectCard> {
           width: 280,
           padding: const EdgeInsets.all(20),
           decoration: BoxDecoration(
-            color: const Color(0xFF1E293B),
+            color: const Color(0xFFF3F4F6),
             borderRadius: BorderRadius.circular(12),
             border: Border.all(
               color: _isHovered 
-                  ? const Color(0xFF38BDF8) 
-                  : const Color(0xFF334155),
+                  ? const Color(0xFF2563EB) 
+                  : const Color(0xFFE5E7EB),
               width: _isHovered ? 2 : 1,
             ),
             boxShadow: _isHovered
                 ? [
                     BoxShadow(
-                      color: const Color(0xFF38BDF8).withOpacity(0.2),
+                      color: const Color(0xFF2563EB).withOpacity(0.2),
                       blurRadius: 12,
                       spreadRadius: 2,
                     ),
@@ -126,14 +126,14 @@ class _ProjectCardState extends State<_ProjectCard> {
               Text(
                 widget.project.title,
                 style: AppTextStyles.heading3.copyWith(
-                  color: const Color(0xFFE2E8F0),
+                  color: const Color(0xFF1F2937),
                 ),
               ),
               const SizedBox(height: 12),
               Text(
                 widget.project.description,
                 style: AppTextStyles.body.copyWith(
-                  color: const Color(0xFF94A3B8),
+                  color: const Color(0xFF6B7280),
                 ),
               ),
               const SizedBox(height: 16),
@@ -147,13 +147,13 @@ class _ProjectCardState extends State<_ProjectCard> {
                       vertical: 6,
                     ),
                     decoration: BoxDecoration(
-                      color: const Color(0xFF334155),
+                      color: const Color(0xFFE5E7EB),
                       borderRadius: BorderRadius.circular(20),
                     ),
                     child: Text(
                       tech,
                       style: const TextStyle(
-                        color: Color(0xFFE2E8F0),
+                        color: Color(0xFF1F2937),
                         fontSize: 12,
                       ),
                     ),

@@ -60,7 +60,7 @@ class _AboutPageState extends State<AboutPage>
   @override
   Widget build(BuildContext context) {
     return Container(
-      color: const Color(0xFF0F172A),
+      color: const Color(0xFFFAFAFA),
       child: SingleChildScrollView(
         padding: const EdgeInsets.all(24),
         child: Column(
@@ -69,7 +69,7 @@ class _AboutPageState extends State<AboutPage>
             Text(
               'About Me',
               style: AppTextStyles.heading2.copyWith(
-                color: const Color(0xFFE2E8F0),
+                color: const Color(0xFF1F2937),
               ),
             ),
             const SizedBox(height: 32),
@@ -85,7 +85,7 @@ class _AboutPageState extends State<AboutPage>
                       shape: BoxShape.circle,
                       boxShadow: [
                         BoxShadow(
-                          color: const Color(0xFF38BDF8)
+                          color: const Color(0xFF2563EB)
                               .withOpacity(_glowAnimation.value),
                           blurRadius: 20 + (_glowAnimation.value * 10),
                           spreadRadius: 2 + (_glowAnimation.value * 5),
@@ -97,12 +97,12 @@ class _AboutPageState extends State<AboutPage>
                 },
                 child: const CircleAvatar(
                   radius: 80,
-                  backgroundColor: Color(0xFF1E293B),
+                  backgroundColor: Color(0xFFF3F4F6),
                   backgroundImage: null,
                   child: Icon(
                     Icons.person,
                     size: 60,
-                    color: Color(0xFF38BDF8),
+                    color: Color(0xFF2563EB),
                   ),
                 ),
               ),
@@ -114,10 +114,10 @@ class _AboutPageState extends State<AboutPage>
             Container(
               padding: const EdgeInsets.all(20),
               decoration: BoxDecoration(
-                color: const Color(0xFF1E293B),
+                color: const Color(0xFFF3F4F6),
                 borderRadius: BorderRadius.circular(12),
                 border: Border.all(
-                  color: const Color(0xFF334155),
+                  color: const Color(0xFFE5E7EB),
                 ),
               ),
               child: Text(
@@ -125,7 +125,7 @@ class _AboutPageState extends State<AboutPage>
                 "specializing in Flutter and modern web technologies. I love building "
                 "beautiful, performant applications that provide great user experiences.",
                 style: AppTextStyles.body.copyWith(
-                  color: const Color(0xFFE2E8F0),
+                  color: const Color(0xFF1F2937),
                 ),
               ),
             ),
@@ -136,7 +136,7 @@ class _AboutPageState extends State<AboutPage>
             Text(
               'Skills',
               style: AppTextStyles.heading3.copyWith(
-                color: const Color(0xFFE2E8F0),
+                color: const Color(0xFF1F2937),
               ),
             ),
             const SizedBox(height: 16),
@@ -156,7 +156,7 @@ class _AboutPageState extends State<AboutPage>
             Text(
               'Connect',
               style: AppTextStyles.heading3.copyWith(
-                color: const Color(0xFFE2E8F0),
+                color: const Color(0xFF1F2937),
               ),
             ),
             const SizedBox(height: 16),
@@ -215,18 +215,18 @@ class _SkillBadgeState extends State<_SkillBadge> {
           vertical: 12,
         ),
         decoration: BoxDecoration(
-          color: const Color(0xFF1E293B),
+          color: const Color(0xFFF3F4F6),
           borderRadius: BorderRadius.circular(24),
           border: Border.all(
             color: _isHovered 
-                ? const Color(0xFFF43F5E) 
-                : const Color(0xFF334155),
+                ? const Color(0xFF8B5CF6) 
+                : const Color(0xFFE5E7EB),
             width: 2,
           ),
           boxShadow: _isHovered
               ? [
                   BoxShadow(
-                    color: const Color(0xFFF43F5E).withOpacity(0.3),
+                    color: const Color(0xFF8B5CF6).withOpacity(0.3),
                     blurRadius: 8,
                     spreadRadius: 1,
                   ),
@@ -239,7 +239,7 @@ class _SkillBadgeState extends State<_SkillBadge> {
             Text(
               widget.skill.name,
               style: const TextStyle(
-                color: Color(0xFFE2E8F0),
+                color: Color(0xFF1F2937),
                 fontSize: 14,
                 fontWeight: FontWeight.w600,
               ),
@@ -248,13 +248,13 @@ class _SkillBadgeState extends State<_SkillBadge> {
             Container(
               padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 2),
               decoration: BoxDecoration(
-                color: const Color(0xFF38BDF8).withOpacity(0.2),
+                color: const Color(0xFF2563EB).withOpacity(0.2),
                 borderRadius: BorderRadius.circular(12),
               ),
               child: Text(
                 '${widget.skill.level}%',
                 style: const TextStyle(
-                  color: Color(0xFF38BDF8),
+                  color: Color(0xFF2563EB),
                   fontSize: 12,
                 ),
               ),
@@ -292,13 +292,13 @@ class _SocialIconState extends State<_SocialIcon> {
         child: CircleAvatar(
           radius: 24,
           backgroundColor: _isHovered 
-              ? const Color(0xFF38BDF8) 
-              : const Color(0xFF1E293B),
+              ? const Color(0xFF2563EB) 
+              : const Color(0xFFF3F4F6),
           child: Icon(
             widget.icon,
             color: _isHovered 
-                ? const Color(0xFF0F172A) 
-                : const Color(0xFFE2E8F0),
+                ? const Color(0xFFFAFAFA) 
+                : const Color(0xFF1F2937),
             size: 20,
           ),
         ),

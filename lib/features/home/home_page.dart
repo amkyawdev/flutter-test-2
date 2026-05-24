@@ -77,7 +77,7 @@ class _HomePageState extends State<HomePage> with TickerProviderStateMixin {
   @override
   Widget build(BuildContext context) {
     return Container(
-      color: const Color(0xFF0F172A),
+      color: const Color(0xFFFAFAFA),
       child: Center(
         child: Padding(
           padding: const EdgeInsets.all(24.0),
@@ -102,14 +102,14 @@ class _HomePageState extends State<HomePage> with TickerProviderStateMixin {
                     Text(
                       _displayedText,
                       style: AppTextStyles.heading1.copyWith(
-                        color: const Color(0xFF38BDF8),
+                        color: const Color(0xFF2563EB),
                       ),
                     ),
                     if (_showCursor) 
                       const Text(
                         '|',
                         style: TextStyle(
-                          color: Color(0xFF38BDF8),
+                          color: Color(0xFF2563EB),
                           fontSize: 48,
                           fontWeight: FontWeight.bold,
                         ),
@@ -134,7 +134,7 @@ class _HomePageState extends State<HomePage> with TickerProviderStateMixin {
                   child: Text(
                     _subtitle,
                     style: AppTextStyles.subtitle.copyWith(
-                      color: const Color(0xFFE2E8F0),
+                      color: const Color(0xFF1F2937),
                     ),
                     textAlign: TextAlign.center,
                   ),
@@ -156,8 +156,8 @@ class _HomePageState extends State<HomePage> with TickerProviderStateMixin {
                   )),
                   child: ElevatedButton(
                     style: ElevatedButton.styleFrom(
-                      backgroundColor: const Color(0xFF38BDF8),
-                      foregroundColor: const Color(0xFF0F172A),
+                      backgroundColor: const Color(0xFF2563EB),
+                      foregroundColor: const Color(0xFFFAFAFA),
                       padding: const EdgeInsets.symmetric(
                         horizontal: 32,
                         vertical: 16,

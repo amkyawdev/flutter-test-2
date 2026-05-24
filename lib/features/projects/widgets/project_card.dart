@@ -22,10 +22,10 @@ class ProjectCard extends StatelessWidget {
       child: Container(
         padding: const EdgeInsets.all(20),
         decoration: BoxDecoration(
-          color: const Color(0xFF1E293B),
+          color: const Color(0xFFF3F4F6),
           borderRadius: BorderRadius.circular(12),
           border: Border.all(
-            color: const Color(0xFF334155),
+            color: const Color(0xFFE5E7EB),
             width: 1,
           ),
         ),
@@ -37,12 +37,12 @@ class ProjectCard extends StatelessWidget {
               width: 48,
               height: 48,
               decoration: BoxDecoration(
-                color: const Color(0xFF38BDF8).withOpacity(0.1),
+                color: const Color(0xFF2563EB).withOpacity(0.1),
                 borderRadius: BorderRadius.circular(12),
               ),
               child: const Icon(
                 Icons.folder,
-                color: Color(0xFF38BDF8),
+                color: Color(0xFF2563EB),
                 size: 24,
               ),
             ),
@@ -53,7 +53,7 @@ class ProjectCard extends StatelessWidget {
             Text(
               title,
               style: AppTextStyles.heading3.copyWith(
-                color: const Color(0xFFE2E8F0),
+                color: const Color(0xFF1F2937),
               ),
             ),
             
@@ -63,7 +63,7 @@ class ProjectCard extends StatelessWidget {
             Text(
               description,
               style: AppTextStyles.body.copyWith(
-                color: const Color(0xFF94A3B8),
+                color: const Color(0xFF6B7280),
               ),
               maxLines: 2,
               overflow: TextOverflow.ellipsis,
@@ -82,13 +82,13 @@ class ProjectCard extends StatelessWidget {
                     vertical: 4,
                   ),
                   decoration: BoxDecoration(
-                    color: const Color(0xFF334155),
+                    color: const Color(0xFFE5E7EB),
                     borderRadius: BorderRadius.circular(16),
                   ),
                   child: Text(
                     tech,
                     style: const TextStyle(
-                      color: Color(0xFFE2E8F0),
+                      color: Color(0xFF1F2937),
                       fontSize: 12,
                     ),
                   ),
