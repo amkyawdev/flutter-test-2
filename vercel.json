@@ -1,8 +1,0 @@
-{
-  "$schema": "https://openapi.vercel.sh/vercel.json",
-  "buildCommand": "flutter build web --release",
-  "outputDirectory": "build/web",
-  "installCommand": "flutter pub get",
-  "framework": "flutter",
-  "regions": ["iad1"]
-}
